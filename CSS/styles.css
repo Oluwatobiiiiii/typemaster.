@@ -40,7 +40,6 @@
 body{
     font-family: 'Barlow', sans-serif;
     background-color: var(--white);
-    overflow: hidden;
 }
 
 /* TYPEMASTER NAVBAR */
