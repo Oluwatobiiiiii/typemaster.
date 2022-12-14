@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange:hsl(22, 89%, 62%);
+    --light-orange: hsl(22, 100%, 69%);
+    --very-dark-cyan:hsl(220, 50%, 7%);
+    --greyish-blue:hsl(221, 23%, 58%);
+    --light-greyish-blue:hsl(198, 28%, 93%);
+    --white:hsl(0, 0%, 100%);
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color:var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:var(--light-orange);
+  border-radius:var(--radius-2);
+}
+
+::-webkit-scrollbar-thumb:hover{ 
+  background-color:var(--orange);
+}
+
+
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: var(--white);
+}
+
+/* TYPEMASTER NAVBAR */
+
+#nav-bar{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left:2rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    max-width: 1720px;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.type-master-logo{
+    flex: 50%;
+}
+
+.nav-logo{
+    padding-left: 1rem;
+}
+
+.navbar-btn{
+    position: absolute;
+    flex: 50%;
+    align-self: flex-end;
+}
+
+.nav-btn{
+    width: 150px;
+    height: 45px;
+    margin-right: 1rem;
+    background-color: var(--light-greyish-blue);
+    color: var(--very-dark-cyan);
+    font-weight: 900;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+/* HOME-PAGE */
+
+#home-page{
+    margin-top: 1rem;
+}
+
+.home-gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left:2rem;
+}
+
+.home-page-text-1{
+    font-size: 31px;
+    font-weight: 900;
+    width: 50%;
+    margin: 1rem 0 1rem;
+}
+
+.key{
+    width: 100px;
+    height: 30px;
+    background-color: var(--light-greyish-blue);
+}
+.home-page-text-2{
+    margin: 1rem 0 1rem;
+    color: var(--greyish-blue);
+}
+
+.home-page-btns{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.home-page-btn-1{
+    flex: 70%;
+}
+
+.home-btn{
+    font-weight: bolder;
+    font-size: 14px;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: .5rem;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.home-page-link{
+    flex: 35%;
+    text-align: center;
+}
+
+.link-text{
+    margin-top: .5rem;
+}
+
+.home-link{
+    color: var(--greyish-blue);
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.mobile-img{
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+.tablet-img{
+    display: none;
+}
+
+.desktop-img{
+    display: none;
+}
+
+#keyboard-gallery{
+    margin-top: 2rem;
+}
+
+.keyboard-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.keyboard-image-1 {
+  background-color: var(--light-orange);
+  border-radius: 4%;
+  width: 200px;
+  height: 250px;
+} 
+
+.keyboard-mobile{
+    border-radius: 4%;
+    grid-column: 1;
+    width: 200px;
+    height: 250px;
+    mix-blend-mode: multiply;
+    overflow: hidden;
+}
+
+.keyboard-image-text{
+    grid-column: 1/span 2;
+}
+
+
+.keyboard-tablet{
+    display: none;
+}
+
+.keyboard-desktop{
+    display: none;
+}
+
+.keyboard-mobile-1{
+    width: 250px;
+    height: 250px;
+    border-radius: 4%;
+}
+
+.keyboard-tablet-1{
+    display: none;
+}
+
+.keyboard-desktop-1{
+    display: none;
+}
+
+.keyboard-image-text{
+    text-align: center;
+}
+
+.keyboard-text{
+    color: var(--very-dark-cyan);
+    margin-bottom: 1rem;
+    font-weight:900;
+    font-size:2rem;
+}
+
+.keyboard-p{
+    color: var(--greyish-blue);
+    margin-bottom: 1rem;
+}
+
+/* FEATURES SECTION */
+
+#features{
+    margin-top: 2rem;
+}
+
+.features-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img-container-1{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-inline: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--orange);
+}
+
+.icon-text{
+    font-weight: 900;
+    margin-bottom:1rem;
+}
+
+.icon-text-2{
+    color:var( --greyish-blue);
+}
+
+/* COPYRIGHT */
+
+#footer{
+    margin-top:5rem;
+    margin-bottom:1rem;
+}
+
+.footer-section{
+    text-align:center;
+}
+
+.copyright{
+    font-weight:600;
+    color:var( --greyish-blue);
+}
+
+.coding-ninja-link{
+    text-decoration:none;
+    color:var(--orange);
+    cursor:pointer;
+}
+
+.type-master-rights{
+    font-weight:900;
+}
+
+/* MEDIA RESPONSIVITY FOR TABLETS */
+
+@media screen and (min-width:770px) {
+
+    body{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* HERO PAGE */
+
+    .home-page-text{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .key{
+        background-color: initial;
+    }
+    
+    /* HOME PAGE */
+
+    .home-gallery{
+        display:flex;
+        flex-direction:row;
+    }
+
+    .mobile-img{
+        display: none;
+    }
+    
+    .tablet-img{
+        display:block;
+        max-width: 100%;
+        border-radius: 5%;
+    }
+    
+    .desktop-img{
+        display: none;
+    }
+
+    .home-page-text{
+        flex:50%;
+    }
+
+    .home-page-gallery{
+        flex:50%;
+    }
+
+    .home-page-btn-1{
+        flex:50%;
+    }
+
+    .home-page-link{
+        flex:50%;
+    }
+
+    /* KEYBOARD-GALLERY */
+    
+    .keyboard-mobile{
+        display:none;
+    }
+
+
+    .keyboard-tablet{
+        max-width: 100%;
+        height: 350px;
+        mix-blend-mode: multiply;
+        overflow: hidden;
+        display:block
+    }
+
+    .keyboard-image-1 {
+        background-color: var(--light-orange);
+        border-radius: 4%;
+        max-width: 100%;
+        height: auto;
+        margin-left: 2rem;
+    } 
+      
+
+    .keyboard-desktop{
+        display:none;
+    }
+
+    .keyboard-mobile-1{
+        display: none;
+    }
+
+    .keyboard-tablet-1{
+        display:  block;
+        min-width: 100%;
+        height: 350px;
+        border-radius: 4%;
+    }
+
+    .keyboard-image-text{
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        margin-left: 2rem;
+    }
+
+    .keyboard-desktop-1{
+        display: none;
+    }
+
+    .keyboard-text{
+        flex: 30%;
+    }
+    
+    .keyboard-p{
+        flex: 70%;
+        text-align: left;
+    }
+
+    /* FEATURES SECTION */
+
+    .features-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .img-container-1{
+        margin-left: .1rem;
+    }
+
+    .highly-compatible{
+        flex: 50%;
+    }
+
+    .bluetooth-wireless{
+        flex: 50%;
+    }
+
+    .battery-portable{
+        flex: 50%;
+    }
+
+    .rgb{
+        flex: 50%;
+    }
+
+}
+
+/* MEDIA RESPONSIVITY FOR LAPTOPS */
+
+@media screen and (min-width:1200px) {
+    /*  HOME PAGE */
+
+    .home-page-text{
+       align-self: center;
+    }
+
+    /* GALLERY SECTION */
+
+    .keyboard-images{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .keyboard-image-text{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-self: center;
+    }
+
+    .keyboard-desktop{
+        display: block;
+        width: 200px;
+        height: 399px;
+        mix-blend-mode: multiply;
+        overflow: hidden;
+        border-radius: 5%;
+    }
+
+    .keyboard-tablet{
+        display: none;
+    }
+
+    .keyboard-mobile{
+        display: none;
+    }
+
+    .keyboard-desktop-1{
+        display: block;
+        width: 450px;
+        height: 399px;
+        border-radius: 5%;
+    }
+
+    .keyboard-mobile-1{
+        display: none;
+    }
+
+    .keyboard-tablet-1{
+        display: none;
+    }
+
+    /* FEATURES SECTION */
+
+    .features-section{
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .keyboard-image-1{
+        height: 399px;
+    } 
+}
+
